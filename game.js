@@ -4,6 +4,24 @@ function getComputerChoice(){
   return options[randomIndex];
 }
 
+
+const rockButton = document.querySelector('.rock');
+const paperButton = document.querySelector('.paper');
+const scissorsButton = document.querySelector('.scissors');
+
+rockButton.addEventListener('click', () => {
+  playerSelection = 'rock';
+});
+
+paperButton.addEventListener('click', () => {
+  playerSelection = 'paper';
+});
+
+scissorsButton.addEventListener('click', () => {
+  playerSelection = 'scissors';
+});
+
+
 function playRound(playerSelection, computerSelection){
   playerSelection = playerSelection.toLowerCase();
 
@@ -46,7 +64,6 @@ let playerScore = 0;
 let computerScore = 0;
 
 for (let i = 0; i < 5; i++) {
-  let playerSelection = prompt("Enter your selection: ");
   let computerSelection = getComputerChoice();
   let roundResult = playRound(playerSelection, computerSelection);
   
@@ -69,3 +86,4 @@ if (playerScore > computerScore) {
 }
 
 console.log(game());
+

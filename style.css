@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: #add8e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    border: 5px solid #ff6ec7;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: #add8e6;
+    text-shadow: 2px 2px #ff6ec7;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s;
+  }
+  
+  button:hover img {
+    transform: scale(1.1);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #add8e6;
+    text-shadow: 2px 2px #ff6ec7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .options,
+  .computer-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .computer-options {
+    margin-top: 35px;
+    gap: 20px;
+  }
+  
+  .computer-options img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .computer-options img.computer-selection {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  
+  .scoreboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  
+  .scoreboard span {
+    font-size: 24px;
+    color: #add8e6;
+    text-shadow: 2px 2px #ff6ec7;
+  }
+  
+  .instructions {
+    font-size: 24px;
+    color: #add8e6;
+    text-shadow: 2px 2px #ff6ec7;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
