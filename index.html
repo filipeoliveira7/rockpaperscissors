@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
@@ -12,28 +15,35 @@
       <span class="player-score">Player: 0</span>
       <span class="computer-score">Computer: 0</span>
     </div>
-      
+
     <div class="options">
-      <button class="option" id="rock"><img src="img/playerrock.png" alt="Rock"></button>
-      <button class="option" id="paper"><img src="img/playerpaper.png" alt="Paper"></button>
-      <button class="option" id="scissors"><img src="img/playerscissors.png" alt="Scissors"></button>
+      <button class="option" id="rock">
+        <img src="img/playerrock.png" alt="Rock" />
+      </button>
+      <button class="option" id="paper">
+        <img src="img/playerpaper.png" alt="Paper" />
+      </button>
+      <button class="option" id="scissors">
+        <img src="img/playerscissors.png" alt="Scissors" />
+      </button>
     </div>
-      
+
     <div class="computer-options">
       <img src="img/computerrock.png" alt="rock" data-option="rock" />
       <img src="img/computerpaper.png" alt="paper" data-option="paper" />
-      <img src="img/computerscissors.png" alt="scissors" data-option="scissors"/>
+      <img
+        src="img/computerscissors.png"
+        alt="scissors"
+        data-option="scissors"
+      />
     </div>
-      
-    <div class="result"></div>
-    
 
-    
+    <div class="result"></div>
+
     <div class="instructions">Make a move to start the game.</div>
 
-
     <button id="reset-button">Reset</button>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
