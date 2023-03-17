@@ -13,7 +13,6 @@ const instructions = document.querySelector(".instructions");
 const resetButton = document.querySelector("#reset-button");
 instructions.style.display = "block";
 
-
 rockButton.addEventListener("click", () => {
   playRound("rock");
 });
@@ -61,7 +60,6 @@ function playRound(playerSelection) {
   }
 }
 
-
 function endGame() {
   // Disable the buttons to prevent further gameplay
   rockButton.disabled = true;
@@ -93,4 +91,3 @@ function resetGame() {
   scissorsButton.disabled = false;
   resetButton.style.display = "none";
 }
-
