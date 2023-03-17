@@ -11,6 +11,8 @@ const playerImage = document.querySelector(".player-image");
 const computerImage = document.querySelector(".computer-image");
 const instructions = document.querySelector(".instructions");
 const resetButton = document.querySelector("#reset-button");
+instructions.style.display = "block";
+
 
 rockButton.addEventListener("click", () => {
   playRound("rock");
