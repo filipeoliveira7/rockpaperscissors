@@ -1,103 +1,140 @@
+/* Set the background color, text color, and center the content vertically and horizontally */
 body {
-    background-color: black;
-    color: #add8e6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  background-color: black;
+  color: #add8e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the h1 element with a border, border radius, padding, and text shadow */
+h1 {
+  border: 5px solid #ff6ec7;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  color: #add8e6;
+  text-shadow: 2px 2px #ff6ec7;
+}
+
+/* Style the button element with no border, transparent background, no padding, and a margin */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the image inside the button with a fixed width and height, and a transition effect */
+button img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s;
+}
+
+/* When hovering over the button image, scale it up */
+button:hover img {
+  transform: scale(1.1);
+}
+
+/* Remove the outline when button is focused */
+button:focus {
+  outline: none;
+}
+
+/* Style the result element with a margin, font size, text color, text shadow, and center it vertically and horizontally */
+.result {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #add8e6;
+  text-shadow: 2px 2px #ff6ec7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the options and computer-options elements with flexbox and a margin */
+.options,
+.computer-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style the computer-options element with a larger margin and a gap between the images */
+.computer-options {
+  margin-top: 35px;
+  gap: 20px;
+}
+
+/* Style the computer options images with a fixed width and height */
+.computer-options img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Hide the computer selection image by default */
+.computer-options img.computer-selection {
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+/* Style the scoreboard element with flexbox, a row direction, center alignment, and a margin */
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+/* Style the spans inside the scoreboard with a font size, text color, and text shadow */
+.scoreboard span {
+  font-size: 24px;
+  color: #add8e6;
+  text-shadow: 2px 2px #ff6ec7;
+}
+
+/* Style the instructions element with a font size, text color, text shadow, margin, and center alignment */
+.instructions {
+  font-size: 24px;
+  color: #add8e6;
+  text-shadow: 2px 2px #ff6ec7;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset {
+  display: none;
+}
+
+
+#reset-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 10px;
+  cursor: pointer;
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+  color: #add8e6;
+  text-shadow: 2px 2px #ff6ec7;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  h1 {
-    border: 5px solid #ff6ec7;
-    border-radius: 10px;
-    padding: 10px;
-    display: inline-block;
-    color: #add8e6;
-    text-shadow: 2px 2px #ff6ec7;
-  }
-  
-  button {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    margin: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  button img {
-    width: 150px;
-    height: 150px;
-    transition: transform 0.3s;
-  }
-  
-  button:hover img {
-    transform: scale(1.1);
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  .result {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #add8e6;
-    text-shadow: 2px 2px #ff6ec7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .options,
-  .computer-options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .computer-options {
-    margin-top: 35px;
-    gap: 20px;
-  }
-  
-  .computer-options img {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .computer-options img.computer-selection {
-    transform: scale(1.1);
-    opacity: 0;
-  }
-  
-  .scoreboard {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 450px;
-    margin-bottom: 20px;
-  }
-  
-  .scoreboard span {
-    font-size: 24px;
-    color: #add8e6;
-    text-shadow: 2px 2px #ff6ec7;
-  }
-  
-  .instructions {
-    font-size: 24px;
-    color: #add8e6;
-    text-shadow: 2px 2px #ff6ec7;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+}

@@ -10,21 +10,22 @@ const scissorsButton = document.querySelector("#scissors");
 const playerImage = document.querySelector(".player-image");
 const computerImage = document.querySelector(".computer-image");
 const instructions = document.querySelector(".instructions");
+const resetButton = document.querySelector("#reset-button");
 
 rockButton.addEventListener("click", () => {
   playRound("rock");
-
-
 });
 
 paperButton.addEventListener("click", () => {
   playRound("paper");
-
 });
 
 scissorsButton.addEventListener("click", () => {
   playRound("scissors");
+});
 
+resetButton.addEventListener("click", () => {
+  resetGame();
 });
 
 const scoreLimit = 5;
@@ -49,14 +50,15 @@ function playRound(playerSelection) {
   }
   instructions.style.display = "none";
 
-
   resultDisplay.textContent = `You chose ${playerSelection}. The computer chose ${computerSelection}. You ${result}!`;
 
   // Check if game has ended
   if (playerScore === scoreLimit || computerScore === scoreLimit) {
     endGame();
+    return;
   }
 }
+
 
 function endGame() {
   // Disable the buttons to prevent further gameplay
@@ -73,4 +75,20 @@ function endGame() {
   } else {
     resultDisplay.textContent = "The game ended in a tie!";
   }
+
+  // Show the reset button
+  resetButton.style.display = "block";
 }
+
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  playerScoreDisplay.textContent = "Player: 0";
+  computerScoreDisplay.textContent = "Computer: 0";
+  resultDisplay.textContent = "";
+  rockButton.disabled = false;
+  paperButton.disabled = false;
+  scissorsButton.disabled = false;
+  resetButton.style.display = "none";
+}
+
